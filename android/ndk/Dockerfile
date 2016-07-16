@@ -1,5 +1,4 @@
-# based on https://github.com/gfx/docker-android-project/blob/master/Dockerfile
-FROM debian:jessie
+FROM java:jessie
 
 MAINTAINER snowdream <yanghui1986527@gmail.com>
 
