@@ -1,5 +1,5 @@
-# docker-android
-[![docker-android](http://dockeri.co/image/snowdream/android-ndk)](https://hub.docker.com/r/snowdream/android-ndk/)
+# android-ndk
+[![android-ndk](http://dockeri.co/image/snowdream/android-ndk)](https://hub.docker.com/r/snowdream/android-ndk/)
 
 This is a Dockerfile to make minimum images for Android projects.
 No `ant`, `maven`are included.
