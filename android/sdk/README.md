@@ -1,5 +1,5 @@
 # docker-android
-[![docker-android](http://dockeri.co/image/snowdream/docker-android)](https://hub.docker.com/r/snowdream/docker-android/)
+[![docker-android](http://dockeri.co/image/snowdream/android)](https://hub.docker.com/r/snowdream/android/)
 
 This is a Dockerfile to make minimum images for Android projects.
 No `ant`, `maven`are included.
@@ -10,18 +10,17 @@ No `ant`, `maven`are included.
 * Git
 * Gradle 2.14
 * Android SDK (android-23,android-24)
-* Android NDK (android-ndk-r12b)
 * Android Support Libraries
 * Google Play Services
 
 ## Download
 ```bash
-docker pull snowdream/docker-android
+docker pull snowdream/android
 ```
 
 ## Usage
 ```bash
-sudo docker run -t -i snowdream/docker-android:latest /bin/bash
+sudo docker run -t -i snowdream/android:latest /bin/bash
 ```
 
 ## License
