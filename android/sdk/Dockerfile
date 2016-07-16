@@ -1,5 +1,5 @@
 # based on https://github.com/gfx/docker-android-project/blob/master/Dockerfile
-FROM ubuntu:16.04
+FROM debian:jessie
 
 MAINTAINER snowdream <yanghui1986527@gmail.com>
 
