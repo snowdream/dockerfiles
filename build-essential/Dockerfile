@@ -8,5 +8,4 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get -qq update && \
     apt-get -qqy install --no-install-recommends \
        build-essential &&\
-       cmake  &&\
      rm -rf /var/lib/apt/lists/*
