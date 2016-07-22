@@ -6,6 +6,8 @@ ENV DEBIAN_FRONTEND noninteractive
 
 # Install dependencies
 RUN apt-get -qq update && \
-    apt-get -qqy install --no-install-recommends \
+    apt-get -qqy install \
        build-essential &&\
+       autotools-dev  &&\
+       cmake  &&\
      rm -rf /var/lib/apt/lists/*
