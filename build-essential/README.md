@@ -1,27 +1,23 @@
-# android-ndk
-[![android-ndk](http://dockeri.co/image/snowdream/android-ndk)](https://hub.docker.com/r/snowdream/android-ndk/)
+# gradle
+[![gradle](http://dockeri.co/image/snowdream/build-essential)](https://hub.docker.com/r/snowdream/build-essential/)
 
-This is a Dockerfile to make minimum images for Android projects.
-No `ant`, `maven`are included.
+This is a Dockerfile to make minimum images for build-essential projects.
 
 ## Included
 * Debian jessie
-* OpenJDK 8
-* Git
-* Gradle 2.14
-* Android SDK (android-23,android-24)
-* Android NDK (android-ndk-r12b)
-* Android Support Libraries
-* Google Play Services
+* build-essential
+* autotools-dev
+* cmake
+
 
 ## Download
 ```bash
-docker pull snowdream/android-ndk
+docker pull snowdream/build-essential
 ```
 
 ## Usage
 ```bash
-sudo docker run -t -i snowdream/android-ndk:latest /bin/bash
+sudo docker run -t -i snowdream/build-essential:latest /bin/bash
 ```
 
 ## License
