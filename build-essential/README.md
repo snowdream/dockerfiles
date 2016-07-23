@@ -1,5 +1,5 @@
-# gradle
-[![gradle](http://dockeri.co/image/snowdream/build-essential)](https://hub.docker.com/r/snowdream/build-essential/)
+# build-essential
+[![build-essential](http://dockeri.co/image/snowdream/build-essential)](https://hub.docker.com/r/snowdream/build-essential/)
 
 This is a Dockerfile to make minimum images for build-essential projects.
 

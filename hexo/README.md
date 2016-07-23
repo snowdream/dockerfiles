@@ -1,5 +1,5 @@
-# gradle
-[![gradle](http://dockeri.co/image/snowdream/hexo)](https://hub.docker.com/r/snowdream/hexo/)
+# hexo
+[![hexo](http://dockeri.co/image/snowdream/hexo)](https://hub.docker.com/r/snowdream/hexo/)
 
 This is a Dockerfile to make minimum images for hexo projects.
 
