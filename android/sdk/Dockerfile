@@ -1,4 +1,4 @@
-FROM snowdream/gradle:2.14
+FROM snowdream/gradle:2.14.1
 
 MAINTAINER snowdream <yanghui1986527@gmail.com>
 
