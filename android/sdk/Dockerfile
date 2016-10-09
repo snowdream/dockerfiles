@@ -19,7 +19,7 @@ ENV PATH ${ANDROID_HOME}/tools:$ANDROID_HOME/platform-tools:$PATH
 
 # Install Android SDK components
 
-ENV ANDROID_COMPONENTS platform-tools,build-tools-24.0.0,build-tools-24.0.1,build-tools-24.0.2,android-24
+ENV ANDROID_COMPONENTS platform-tools,build-tools-24.0.0,build-tools-24.0.1,build-tools-24.0.2,build-tools-24.0.3,android-24
 ENV GOOGLE_COMPONENTS extra-android-m2repository,extra-google-m2repository
 
 RUN echo y | android update sdk --no-ui --all --filter "${ANDROID_COMPONENTS}" ; \
