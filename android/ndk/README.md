@@ -9,8 +9,8 @@ No `ant`, `maven`are included.
 * OpenJDK 8
 * Git
 * Gradle 2.14
-* Android SDK (android-23,android-24)
-* Android NDK (android-ndk-r12b)
+* Android SDK (android-25)
+* Android NDK (android-ndk-r13)
 * Android Support Libraries
 * Google Play Services
 
