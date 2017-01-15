@@ -7,7 +7,7 @@ This is a Dockerfile to make minimum images for groovy projects.
 * Debian jessie
 * OpenJDK 8
 * Git
-* Gradle 2.14
+* Groovy 2.4.8
 
 
 ## Download
