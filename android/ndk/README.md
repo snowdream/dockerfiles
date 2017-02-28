@@ -8,9 +8,9 @@ No `ant`, `maven`are included.
 * Debian jessie
 * OpenJDK 8
 * Git
-* Gradle 2.14
+* Gradle 3.4
 * Android SDK (android-25)
-* Android NDK (android-ndk-r13)
+* Android NDK (android-ndk-r13b)
 * Android Support Libraries
 * Google Play Services
 
