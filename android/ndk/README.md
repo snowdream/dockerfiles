@@ -10,7 +10,7 @@ No `ant`, `maven`are included.
 * Git
 * Gradle 3.4
 * Android SDK (android-25)
-* Android NDK (android-ndk-r13b)
+* Android NDK (android-ndk-14)
 * Android Support Libraries
 * Google Play Services
 
