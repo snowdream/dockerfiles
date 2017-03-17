@@ -4,7 +4,8 @@ MAINTAINER snowdream <yanghui1986527@gmail.com>
 
 # Install
 RUN DEBIAN_FRONTEND=noninteractive && \
-    apt-get install x2go-keyring && \
+    apt-key adv --recv-keys --keyserver keys.gnupg.net E1F958385BFE2B6E && \
+    echo "deb http://packages.x2go.org/debian jessie main" >> /etc/apt/sources.list.d/x2go.list && \
     apt-get -qq update && \
     apt-get -qqy install --no-install-recommends \
        apt-utils \
