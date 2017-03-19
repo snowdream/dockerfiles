@@ -38,6 +38,9 @@ ENV GOOGLE_COMPONENTS "extras;android;m2repository" \
 ENV CONSTRAINT_LAYOUT "extras;m2repository;com;android;support;constraint;constraint-layout;1.0.2"\
                        "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2"
 
-RUN ${ANDROID_SDK_MANAGER} "${ANDROID_COMPONENTS}" \
-                            "${GOOGLE_COMPONENTS}" \
-                            "${CONSTRAINT_LAYOUT}"  
+RUN mkdir -p ${ANDROID_HOME}/licenses/ && \
+    echo "8933bad161af4178b1185d1a37fbf41ea5269c55" > ${ANDROID_HOME}/licenses/android-sdk-license && \
+    echo "84831b9409646a918e30573bab4c9c91346d8abd" > ${ANDROID_HOME}/licenses/android-sdk-preview-license && \
+    ${ANDROID_SDK_MANAGER}  ${ANDROID_COMPONENTS} \
+                            ${GOOGLE_COMPONENTS} \
+                            ${CONSTRAINT_LAYOUT}  
