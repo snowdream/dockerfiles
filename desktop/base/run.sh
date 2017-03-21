@@ -5,4 +5,4 @@ fi
 
 dbus-daemon --system --fork
 
-exec /usr/sbin/sshd -D
+service ssh start && service x2goserver start

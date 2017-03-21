@@ -36,10 +36,10 @@ RUN DEBIAN_FRONTEND=noninteractive && \
     apt-get autoremove && \
     rm -rf /var/lib/apt/lists/*
 
-# ADD set_root_pw.sh /set_root_pw.sh
-# ADD run.sh /run.sh
-# RUN chmod +x /*.sh
+ADD set_root_pw.sh /set_root_pw.sh
+ADD run.sh /run.sh
+RUN chmod +x /*.sh
 
 EXPOSE 22
 
-# CMD ["/run.sh"]
+CMD ["/run.sh"]
