@@ -5,14 +5,14 @@ if [ -f /.root_pw_set ]; then
 	exit 0
 fi
 
-PASS=${ROOT_PASS:-$(pwgen -s 1 5)}
+PASS=${ROOT_PASS:-$(pwgen -s 5 1)}
 _word=$( [ ${ROOT_PASS} ] && echo "preset" || echo "random" )
 echo "=> Setting a ${_word} password to the root user"
 echo "root:$PASS" | chpasswd
 
 adduser --disabled-password --gecos "" dockerx 
 adduser dockerx sudo
-DPASS=$(pwgen -s 1 5)
+DPASS=$(pwgen -s 5 1)
 
 echo "=> Setting a password to the docker user"
 echo "dockerx:$DPASS" | chpasswd
