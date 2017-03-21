@@ -42,4 +42,4 @@ RUN chmod +x /*.sh
 
 EXPOSE 22
 
-CMD ["/run.sh", "-D"]
+CMD ["/run.sh"]
