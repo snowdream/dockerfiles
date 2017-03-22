@@ -23,7 +23,7 @@ RUN curl -sSL "${ANDROID_SDK_URL}" -o tools_${ANDROID_SDK_VERSION}-linux.zip \
   
 ENV PATH ${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:$ANDROID_HOME/platform-tools:$PATH
 
-# Install Android SDK components
+# Install Android SDK Components
 ENV ANDROID_COMPONENTS "tools" \
                        "platform-tools" \
                        "build-tools;25.0.2" \
