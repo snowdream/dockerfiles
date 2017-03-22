@@ -19,6 +19,7 @@ RUN DEBIAN_FRONTEND=noninteractive && \
     echo "deb http://packages.x2go.org/debian jessie main" >> /etc/apt/sources.list.d/x2go.list && \
     apt-get -qq update && \
     apt-get -qqy install --no-install-recommends \
+       vim \
        apt-utils \
        pwgen \
        task-mate-desktop \
@@ -29,7 +30,7 @@ RUN DEBIAN_FRONTEND=noninteractive && \
        sed -i "s/UsePAM.*/UsePAM no/g" /etc/ssh/sshd_config && \
        sed -i "s/PermitRootLogin.*/PermitRootLogin yes/g" /etc/ssh/sshd_config && \
        sed -i "s/#PasswordAuthentication/PasswordAuthentication/g" /etc/ssh/sshd_config && \
-       sed -i "s/mesg n/tty -s && mesg n/g" ~/.profile && \
+       sed -i 's/^mesg n$/tty -s \&\& mesg n/g' ~/.profile && \
        mkdir -p /tmp/.X11-unix && chmod 1777 /tmp/.X11-unix && \
        mkdir /var/run/dbus && \
     apt-get clean && \
