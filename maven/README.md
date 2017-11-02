@@ -7,7 +7,7 @@ This is a Dockerfile to make minimum images for maven projects.
 * Debian jessie
 * OpenJDK 8
 * Git
-* maven 3.3.9
+* maven 3.5.2
 
 
 ## Download
