@@ -14,7 +14,7 @@ RUN apt-get -qq update && \
 ENV SDK_HOME /usr/local
 
 # Download and unzip Groovy
-ENV GROOVY_VERSION 2.4.12
+ENV GROOVY_VERSION 2.4.13
 ENV GROOVY_SDK_URL https://bintray.com/artifact/download/groovy/maven/apache-groovy-binary-${GROOVY_VERSION}.zip
 RUN curl -sSL "${GROOVY_SDK_URL}" -o  apache-groovy-binary-${GROOVY_VERSION}.zip  \
 	&& unzip apache-groovy-binary-${GROOVY_VERSION}.zip -d ${SDK_HOME}  \
