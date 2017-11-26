@@ -1,4 +1,4 @@
-FROM java:8
+FROM openjdk:8
 
 MAINTAINER snowdream <yanghui1986527@gmail.com>
 
