@@ -15,7 +15,7 @@ ENV SDK_HOME /usr/local
 
 # Download and unzip Ant
 ENV ANT_VERSION 1.10.0
-ENV ANT_SDK_URL http://apache.fayea.com//ant/binaries/apache-ant-${ANT_VERSION}-bin.zip
+ENV ANT_SDK_URL http://mirrors.tuna.tsinghua.edu.cn/apache//ant/binaries/apache-ant-${ANT_VERSION}-bin.zip
 
 RUN curl -sSL "${ANT_SDK_URL}" -o apache-ant-${ANT_VERSION}-bin.zip  \
 	&& unzip apache-ant-${ANT_VERSION}-bin.zip -d ${SDK_HOME}  \
