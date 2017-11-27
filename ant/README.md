@@ -7,7 +7,7 @@ This is a Dockerfile to make minimum images for ant projects.
 * Debian jessie
 * OpenJDK 8
 * Git
-* ant 1.10.0
+* ant 1.10.1
 
 
 ## Download
