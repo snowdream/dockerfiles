@@ -14,7 +14,7 @@ RUN apt-get -qq update && \
 ENV SDK_HOME /usr/local
 
 # Download and unzip Gradle
-ENV GRADLE_VERSION 4.9
+ENV GRADLE_VERSION 4.10
 ENV GRADLE_SDK_URL https://services.gradle.org/distributions/gradle-${GRADLE_VERSION}-bin.zip
 RUN curl -sSL "${GRADLE_SDK_URL}" -o gradle-${GRADLE_VERSION}-bin.zip  \
 	&& unzip gradle-${GRADLE_VERSION}-bin.zip -d ${SDK_HOME}  \

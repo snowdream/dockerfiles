@@ -7,7 +7,7 @@ This is a Dockerfile to make minimum images for gradle projects.
 * Debian jessie
 * OpenJDK 8
 * Git
-* Gradle 4.9
+* Gradle 4.10
 
 
 ## Download
